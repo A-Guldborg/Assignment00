@@ -81,4 +81,19 @@ public class HelloWorldTests
         // Assert
         isLeapYear.Should().Be(false);
     }
+
+    [Fact]
+    public void Years_Before_1582_Are_Not_Leap_Years() {
+        // Arrange
+        var yearDivisibleBy4 = 1580;
+        var centennialDivisibleBy400 = 1200;
+        
+        // Act
+        var is1580LeapYear = HelloWorld.IsLeapYear(yearDivisibleBy4);
+        var is1200LeapYear = HelloWorld.IsLeapYear(centennialDivisibleBy400);
+
+        // Assert
+        is1580LeapYear.Should().Be(false);
+        is1200LeapYear.Should().Be(false);
+    }
 }
