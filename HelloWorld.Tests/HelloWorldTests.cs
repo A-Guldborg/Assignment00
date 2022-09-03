@@ -46,7 +46,6 @@ public class HelloWorldTests
         output.Should().Be("Please enter a valid year");
     }
 
-
     [Fact]
     public void Leap_Year_2004_When_Divisible_By_4() {
         // Arrange
