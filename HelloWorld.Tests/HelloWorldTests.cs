@@ -42,4 +42,17 @@ public class HelloWorldTests
         // Assert
         isLeapYear.Should().Be(false);
     }
+
+    [Fact]
+    public void Centennial_Not_Divisible_By_400_Is_Not_Leap_Year() {
+        // Arrange
+        var year = 1900;
+        var obj = new HelloWorld();
+
+        // Act
+        var isLeapYear = obj.IsLeapYear(year);
+
+        // Assert
+        isLeapYear.Should().Be(false);
+    }
 }
