@@ -10,7 +10,7 @@ public class HelloWorldTests
         Console.SetOut(writer);
 
         // Act
-        HelloWorld.Main(null);
+        HelloWorld.Main(Array.Empty<string>());
 
         // Assert
         var output = writer.GetStringBuilder().ToString().TrimEnd();
