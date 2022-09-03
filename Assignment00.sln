@@ -3,10 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{513AC9A9-C35A-42CE-A146-32E42BD6EA32}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.Tests", "HelloWorld.Tests\HelloWorld.Tests.csproj", "{DA231E94-F21E-4746-A6C9-8A84D5274A07}"
 EndProject
+=======
+>>>>>>> f160f3c (Initial commit)
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +18,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+<<<<<<< HEAD
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{513AC9A9-C35A-42CE-A146-32E42BD6EA32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{513AC9A9-C35A-42CE-A146-32E42BD6EA32}.Debug|Any CPU.Build.0 = Debug|Any CPU
@@ -25,4 +29,6 @@ Global
 		{DA231E94-F21E-4746-A6C9-8A84D5274A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA231E94-F21E-4746-A6C9-8A84D5274A07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+=======
+>>>>>>> f160f3c (Initial commit)
 EndGlobal
