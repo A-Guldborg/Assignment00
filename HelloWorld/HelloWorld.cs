@@ -22,6 +22,8 @@ public class HelloWorld {
     }
     
     public static bool IsLeapYear(int year) {
+        if (year < 1582) return false;
+
         if (year % 100 == 0) {
             return (year % 400 == 0);
         }
