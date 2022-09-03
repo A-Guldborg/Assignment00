@@ -7,14 +7,18 @@ public class HelloWorld {
     }
 
     public static void CommandLineLeapYear(string input) {
-        int year = Int32.Parse(input);
-
-        Boolean isLeapYear = IsLeapYear(year);
-        if (isLeapYear) {
-            Console.WriteLine("yay");
-        } else {
-            Console.WriteLine("nay");
-        }    
+        try {
+            int year = Int32.Parse(input);
+        
+            Boolean isLeapYear = IsLeapYear(year);
+            if (isLeapYear) {
+                Console.WriteLine("yay");
+            } else {
+                Console.WriteLine("nay");
+            }    
+        } catch {
+            Console.WriteLine("Please enter a valid year");
+        }
     }
     
     public static bool IsLeapYear(int year) {
