@@ -32,6 +32,20 @@ public class HelloWorldTests
         output.Should().Be("nay");
     }
 
+    [Fact] 
+    public void CLI_Does_Not_Accept_Words() {
+        // Arrange
+        using var writer = new StringWriter();
+        Console.SetOut(writer);
+
+        // Act
+        HelloWorld.CommandLineLeapYear("Hello, World!");
+
+        // Assert
+        var output = writer.GetStringBuilder().ToString().TrimEnd();
+        output.Should().Be("Please enter a valid year");
+    }
+
 
     [Fact]
     public void Leap_Year_2004_When_Divisible_By_4() {
