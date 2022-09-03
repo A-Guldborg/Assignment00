@@ -3,7 +3,7 @@ namespace HelloWorld.Tests;
 public class HelloWorldTests
 {
     [Fact]
-    public void Test1()
+    public void Hello_World_Test()
     {
         // Arrange 
         using var writer = new StringWriter();
@@ -15,5 +15,31 @@ public class HelloWorldTests
         // Assert
         var output = writer.GetStringBuilder().ToString().TrimEnd();
         output.Should().Be("Hello, World!");
+    }
+
+    [Fact]
+    public void Leap_Year_2004_When_Divisible_By_4() {
+        // Arrange
+        var year = 2004;
+        var obj = new HelloWorld();
+
+        // Act
+        var isLeapYear = obj.IsLeapYear(year);
+
+        // Assert
+        isLeapYear.Should().Be(true);
+    }
+
+    [Fact]
+    public void Not_Leap_Year_1999_When_Not_Divisible_By_4() {
+        // Arrange
+        var year = 1999;
+        var obj = new HelloWorld();
+
+        // Act
+        var isLeapYear = obj.IsLeapYear(year);
+
+        // Assert
+        isLeapYear.Should().Be(false);
     }
 }
